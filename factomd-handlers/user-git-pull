@@ -1,0 +1,5 @@
+#!/bin/sh
+
+echo "Serf performing a git pull...\n" > logs/updated.txt
+git pull >> logs/updated.txt
+echo "\nCompleted at: `date`" >> logs/updated.txt
