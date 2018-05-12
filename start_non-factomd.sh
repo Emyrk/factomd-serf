@@ -1,1 +1,1 @@
-serf agent -node=emyrk -config-dir=confs --tag role=none
+serf agent -node=$1 -config-dir=confs-no-factomd
