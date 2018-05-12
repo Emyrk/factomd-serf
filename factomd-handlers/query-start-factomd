@@ -1,0 +1,11 @@
+#!/usr/bin/env python
+import subprocess
+import os
+
+# Custom utils
+from util import serfutil
+
+if serfutil.isFactomd():
+	subprocess.call(["docker", "start", "factomd"])
+else
+	print("No factomd")
