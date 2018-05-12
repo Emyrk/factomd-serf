@@ -3,7 +3,7 @@
   	"role":"observer"
   },
   "event_handlers": [
-    "/home/steven/go/src/github.com/Emyrk/factomd-serf/router_factomd.sh"
+    "~/go/src/github.com/Emyrk/factomd-serf/router_factomd.sh"
   ],
   "start_join": [
   ],

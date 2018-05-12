@@ -3,10 +3,10 @@
     "role":"factomd"
   },
   "event_handlers": [
-    "/home/steven/go/src/github.com/Emyrk/factomd-serf/router_factomd.sh"
+    "~/go/src/github.com/Emyrk/factomd-serf/router_factomd.sh"
   ],
   "start_join": [
-  	"54.71.15.30:8108"
+  	"54.71.15.30:7946"
   ],
   "profile":"wan",
   "retry_interval": "5s"
