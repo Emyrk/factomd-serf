@@ -7,5 +7,5 @@ from util import serfutil
 
 if serfutil.isFactomd():
 	subprocess.call(["docker", "start", "factomd"])
-else
+else:
 	print("No factomd")

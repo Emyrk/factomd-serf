@@ -1,0 +1,12 @@
+{
+  "tags": {
+  },
+  "event_handlers": [
+    "/home/steven/go/src/github.com/Emyrk/factomd-serf/router_factomd.sh"
+  ],
+  "start_join": [
+  	"34.243.9.109:8108"
+  ],
+  "profile":"wan",
+  "retry_interval": "5s"
+}

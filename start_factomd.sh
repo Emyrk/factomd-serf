@@ -1,0 +1,1 @@
+serf agent -node=emyrk -config-dir=confs --tag role=factomd

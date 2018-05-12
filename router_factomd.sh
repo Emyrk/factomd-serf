@@ -1,5 +1,5 @@
 #!/bin/sh
-HANDLER_DIR="$GOPATH/src/github.com/Emyrk/serfplayground/factomd-handlers"
+HANDLER_DIR="$GOPATH/src/github.com/Emyrk/factomd-serf/factomd-handlers"
 
 if [ "$SERF_EVENT" = "user" ]; then
     EVENT="user-$SERF_USER_EVENT"
