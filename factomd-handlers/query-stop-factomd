@@ -4,15 +4,13 @@ import subprocess
 import os
 
 # Custom utils
-from util import serfutil, dockerutil
+from util import serfutil, dockerutil, factomd_control
 
 if serfutil.is_factomd():
 	# subprocess.call(["docker", "stop", "factomd"])
 	# Using docker api
 	try:
-		client = dockerutil.get_client()
-		factomd_container = dockerutil.get_factomd_container(client)
-		factomd_container.stop()
+		factomd_control.stop_factomd()
 	except Exception as e:
 		print("Error: " + e)
 else:

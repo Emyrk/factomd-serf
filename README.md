@@ -1,6 +1,10 @@
 # Serf Controller Docker Engine
 
-This repo is aimed to design a control plane using serf to control a docker container named "factomd"
+This repo is aimed to design a control plane using serf to control a docker container named "factomd".
+
+You can read about serf here: https://www.serf.io/
+
+The idea is to have each factomd able to be controlled by a distributed side network. This side network operates on a different network than factomd, so if factomd becomes stalled, this side network can communicate a synchronous reboot. You can read how this side network control plane works [here](TECHNICAL.md)
 
 ## Directory Structure
 

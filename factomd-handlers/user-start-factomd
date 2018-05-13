@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# This serf query starts the factomd docker container
+# This serf query starts the factomd docker container (no output)
 import subprocess
 import os
 
@@ -12,6 +12,4 @@ if serfutil.is_factomd():
 	try:
 		factomd_control.start_factomd()
 	except Exception as e:
-		print("Error: ",  e)
 else:
-	print("No factomd")

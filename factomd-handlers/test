@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 
-from util import serfutil, dockerutil
+from util import serfutil, factomd_control
 
-client = dockerutil.get_client()
+# client = dockerutil.get_client()
 try:
-	factomd_container = dockerutil.get_factomd_container(client)
+	factomd_control.start_factomd()
 except Exception as e:
 	print(e)
