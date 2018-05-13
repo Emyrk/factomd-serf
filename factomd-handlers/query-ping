@@ -1,5 +1,4 @@
 #!/bin/sh
-
 # This serf query responds with a simple "pong" to test a node
 
 echo "pong"

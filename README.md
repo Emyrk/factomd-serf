@@ -64,3 +64,10 @@ Will do a git pull on this repo to update serf query/event scripts
 ```
 serf event git-pull
 ```
+
+# Run Serf controller in docker
+
+```
+docker build -t serf-control .
+docker run -v /var/run/docker.sock:/var/run/docker.sock serf-control NAME
+```
