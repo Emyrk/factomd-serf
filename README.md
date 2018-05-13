@@ -73,5 +73,6 @@ serf event git-pull
 
 ## DO NOT USE SERF IN A DOCKER
 
+A containerized serf does not work well, something about Docker's networking layer and UDP or something. I already made the docker container before I realized that, so the work is done, just don't use it...
 
 See `build.sh` and `run.sh` 
