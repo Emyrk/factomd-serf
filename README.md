@@ -18,3 +18,49 @@ factomd-serf/
 ├── start_non-factomd.sh 	# Quickstart for starting serf, without controlling a factomd
 └── router_factomd.sh 		# Used by serf to handle events and queries
 ```
+
+# Serf Queries/Events
+
+## Queries
+
+### start-factomd
+
+Will run `docker start factomd`
+
+```
+serf query start-factomd
+```
+
+### stop-factomd
+
+Will run `docker stop factomd`
+
+```
+serf query stop-factomd
+```
+
+### ping
+
+Simple ping/pong
+
+```
+serf query ping
+```
+
+### version
+
+Will return the top git commit of the repo each serf node is running with.
+
+```
+serf query version
+```
+
+## Events
+
+### git-pull
+
+Will do a git pull on this repo to update serf query/event scripts
+
+```
+serf event git-pull
+```
