@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# This serf query starts the factomd docker container
 import subprocess
 import os
 

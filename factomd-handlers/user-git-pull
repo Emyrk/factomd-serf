@@ -1,4 +1,5 @@
 #!/bin/sh
+# This serf event will update the github repo
 
 echo "Serf performing a git pull...\n" > logs/updated.txt
 git pull >> logs/updated.txt

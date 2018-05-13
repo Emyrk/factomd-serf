@@ -1,0 +1,5 @@
+#!/bin/sh
+# This serf query responds with the github repo commit to easily determine
+# the amount of nodes not updated
+
+echo `git rev-parse HEAD`
